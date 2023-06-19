@@ -2,10 +2,15 @@
 module.exports = {
   content: [
        "./src/**/*.{js,jsx,ts,tsx}",
+       'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: { 
+        "background_image": "url('/public/bg2.jpg')",
+         }
+    },
   },
-  plugins: [],
+    plugins: [require('flowbite/plugin')],
 }
 
