@@ -12,9 +12,6 @@ const Home = () => {
         <StaticCarousel className=""></StaticCarousel>
         <Form className=""></Form>
       </div>
-      
-
-      
     </div>
   );
 };
@@ -107,7 +104,7 @@ const Form = () => {
           />
         </form>
       </div>
-      
+
       <DefaultButtons text="REGISTER ME" className="mt-8" />
     </div>
   );
