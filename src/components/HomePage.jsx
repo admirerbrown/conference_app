@@ -68,8 +68,8 @@ const DefaultButtons = ({ text }) => {
 
 const Form = () => {
   return (
-    <div className="bg-gray-900 absolute z-50 h-3/5 p-8 rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 m-24 invisible md:visible">
-      <div className="flex flex-col align-items-center justify-center">
+    <div className="bg-gray-900 absolute z-50 lg:h-3/5 2xl:h-2/5 xl:h-3/6 p-8 rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 m-24 invisible md:visible">
+      <div className="flex flex-col align-items-center justify-center ">
         <h1 className="text-white font-bold mb-2">EVENT REGISTER</h1>
         <hr className="border-gray-300" />
         <br />
@@ -78,28 +78,28 @@ const Form = () => {
             type="text"
             maxLength={20}
             placeholder="Email address"
-            className="bg-transparent border-2 border-gray-300 rounded-lg p-2 mb-2 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
+            className="bg-transparent border-2 border-gray-300 rounded-lg p-2 mb-2 text-white placeholder-gray-400 focus:outline-none focus:border-orange-600"
             required
           />
           <input
             type="text"
             maxLength={20}
             placeholder="Phone Number"
-            className="bg-transparent border-2 border-gray-300 rounded-lg p-2 mb-2 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
+            className="bg-transparent border-2 border-gray-300 rounded-lg p-2 mb-2 text-white placeholder-gray-400 focus:outline-none focus:border-orange-600"
             required
           />
           <input
             type="text"
             maxLength={20}
             placeholder="Quantity"
-            className="bg-transparent border-2 border-gray-300 rounded-lg p-2 mb-2 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
+            className="bg-transparent border-2 border-gray-300 rounded-lg p-2 mb-2 text-white placeholder-gray-400 focus:outline-none focus:border-orange-600"
             required
           />
           <input
             type="text"
             maxLength={20}
             placeholder="I am attending to"
-            className="bg-transparent mb-5 border-2 border-gray-300 rounded-lg p-2 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"
+            className="bg-transparent mb-5 border-2 border-gray-300 rounded-lg p-2 text-white placeholder-gray-400 focus:outline-none focus:border-orange-600"
             required
           />
         </form>

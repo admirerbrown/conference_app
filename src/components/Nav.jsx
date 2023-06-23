@@ -16,7 +16,7 @@ export default function NavMenu() {
           src="/favicon.svg"
         /> */}
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Flowbite React
+          <h2>Alum-nite</h2>
         </span>
       </Navbar.Brand>
      
