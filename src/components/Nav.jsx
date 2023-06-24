@@ -6,11 +6,11 @@ export default function NavMenu() {
   return (
     <Navbar fluid >
       <Navbar.Brand href="https://flowbite-react.com">
-        {/* <img
-          alt="Flowbite React Logo"
+        <img
+          alt="company Logo"
           className="mr-3 h-6 sm:h-9"
-          src="/favicon.svg"
-        /> */}
+          src="/apple-touch-icon.png"
+        />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
           <h2>Alum-nite</h2>
         </span>
