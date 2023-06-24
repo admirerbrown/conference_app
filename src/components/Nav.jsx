@@ -4,7 +4,7 @@ import { Navbar } from "flowbite-react";
 
 export default function NavMenu() {
   return (
-    <Navbar fluid >
+    <Navbar fluid>
       <Navbar.Brand href="https://flowbite-react.com">
         <img
           alt="company Logo"
@@ -12,12 +12,12 @@ export default function NavMenu() {
           src="/apple-touch-icon.png"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
-          <h2>Alum-nite</h2>
+          <h2>Alum-Nite</h2>
         </span>
       </Navbar.Brand>
 
       <Navbar.Toggle />
-      <Navbar.Collapse >
+      <Navbar.Collapse>
         <Navbar.Link active href="#">
           <p>Home</p>
         </Navbar.Link>
