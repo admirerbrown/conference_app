@@ -2,16 +2,15 @@ import { ImLocation } from "react-icons/im";
 import { FaCalendarAlt } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 
-
 const AboutPage = () => {
   return (
-    <div className="bg-orange-600 h-20">
+    <div className="bg-orange-600 sm:h-20 lg:h-24 xl:24 flex justify-between md:px-24">
       <ul className="flex justify-items-center flex-col px-4 py-2">
         <li className="flex text-white justify-items-center p-1">
           <ImLocation className="pt-1"></ImLocation> ACCRA, GHANA
         </li>
         <li className="flex text-white text-sm justify-items-center p-1">
-          <FaCalendarAlt className="pt-1"></FaCalendarAlt> AUG 14 - FEB 24, 2024
+          <FaCalendarAlt className="pt-1 "></FaCalendarAlt> AUG 14 - FEB 24, 2024
         </li>
       </ul>
       <Countdown></Countdown>
@@ -20,7 +19,6 @@ const AboutPage = () => {
 };
 
 const Countdown = () => {
-  
   const [days, setDays] = useState(99);
   const [hours, setHours] = useState(10);
   const [minutes, setMinutes] = useState(24);
@@ -57,52 +55,33 @@ const Countdown = () => {
   });
 
   return (
-    <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-      <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
-          <span style={{ '--value': days }}>{days}</span>
+    <div className="grid-flow-col gap-5 text-center auto-cols-max py-4 hidden md:grid">
+      <div className="flex flex-col p-2 bg-neutral  text-neutral-content h-16">
+        <span className="countdown font-mono text-3xl">
+          <span style={{ "--value": days }}>{days}</span>
         </span>
         days
       </div>
-      <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
-          <span style={{ '--value': hours }}>{hours}</span>
+      <div className="flex flex-col p-2 bg-neutral  text-neutral-content h-16">
+        <span className="countdown font-mono text-3xl ">
+          <span style={{ "--value": hours }}>{hours}</span>
         </span>
         hours
       </div>
-      <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
-          <span style={{ '--value': minutes }}>{minutes}</span>
+      <div className="flex flex-col p-2 bg-neutral  text-neutral-content h-16">
+        <span className="countdown font-mono text-3xl">
+          <span style={{ "--value": minutes }}>{minutes}</span>
         </span>
         min
       </div>
-      <div className="flex flex-col">
-        <span className="countdown font-mono text-5xl">
-          <span style={{ '--value': seconds }}>{seconds}</span>
+      <div className="flex flex-col p-2 bg-neutral text-neutral-content h-16">
+        <span className="countdown font-mono text-3xl">
+          <span style={{ "--value": seconds }}>{seconds}</span>
         </span>
         sec
       </div>
     </div>
   );
-  
 };
-
-
-// const CountdownItem = (args) => {
-//   const [value, setValue] = useState(args.value);
-
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setValue((v) => (v <= 0 ? args.value : v - 1));
-//     }, 1000);
-
-//     return () => {
-//       clearTimeout(timer);
-//     };
-//   }, [args.value]);
-
-//   return <span style={{ "--value": value }}></span>;
-// };
-
 
 export default AboutPage;
