@@ -1,7 +1,8 @@
 import './App.css';
 import NavMenu from './components/Nav';
 import Home from './components/HomePage';
-import AboutPage from './components/About';
+import Counter from './components/CountDown';
+import About from './components/AboutUs';
 
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
     <div className="App">
       <NavMenu></NavMenu>
       <Home></Home>
-      <AboutPage></AboutPage>
+      <Counter></Counter>
+      <About></About>
+
     </div>
   );
 }

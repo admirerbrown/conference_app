@@ -2,7 +2,7 @@ import { ImLocation } from "react-icons/im";
 import { FaCalendarAlt } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 
-const AboutPage = () => {
+const Counter = () => {
   return (
     <div className="bg-orange-600 sm:h-20 lg:h-24 xl:24 flex justify-between md:px-24">
       <ul className="flex justify-items-center flex-col px-4 py-2">
@@ -10,7 +10,8 @@ const AboutPage = () => {
           <ImLocation className="pt-1"></ImLocation> ACCRA, GHANA
         </li>
         <li className="flex text-white text-sm justify-items-center p-1">
-          <FaCalendarAlt className="pt-1 "></FaCalendarAlt> AUG 14 - FEB 24, 2024
+          <FaCalendarAlt className="pt-1 "></FaCalendarAlt> AUG 14 - FEB 24,
+          2024
         </li>
       </ul>
       <Countdown></Countdown>
@@ -84,4 +85,4 @@ const Countdown = () => {
   );
 };
 
-export default AboutPage;
+export default Counter;
