@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <div className="">
-      <div className="bg-bg_image bg-no-repeat lg:w-1/2 bg-cover flex">
+    <div className="lg:flex">
+      <div className="bg-bg_image bg-no-repeat lg:w-1/2 bg-cover">
         <div className="bg-slate-800 bg-opacity-95 position-right lg:h-84 2xl:h-84 flex flex-col justify-start">
-          <h2 className="text-white text-2xl text-right px-10 pt-16 pb-3">
+          <h2 className="text-white text-2xl text-center lg:text-right px-10 pt-16 pb-3">
             <span className="font-bold">ABOUT </span>CONFERENCE
           </h2>
           <p className="text-gray-300 text-center lg:text-right lg:pl-24 pl-10 pr-10">
@@ -32,10 +32,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="lg:h-84 2xl:h-84 lg:w-1/2">
+      <div className=" lg:w-1/2">
         <iframe
-          width="500"
-          // height="637"
+          className="h-80 lg:h-full w-full"
           src="https://www.youtube.com/embed/cKulcWRx5Y8"
           title="World Customs Organization Technology Conference and Exhibition 2022"
           frameborder="0"
