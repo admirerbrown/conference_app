@@ -15,7 +15,8 @@ body {
 .py-2\.5{
 
   padding-top: 15px;
-  background-color: rgb(234, 88, 12);
+  /* background-color: rgb(234, 88, 12); */
+  background-color: #e45914 !important;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
