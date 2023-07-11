@@ -59,7 +59,7 @@ const StaticCarousel = () => {
 const DefaultButtons = ({ text }) => {
   return (
     <>
-      <Button className="bg-orange-600 w-44 mx-5 " color="dark">
+      <Button className="bg-[#e45914] w-44 mx-5 " color="dark">
         {text}
       </Button>
     </>
@@ -105,7 +105,7 @@ const Form = () => {
         </form>
       </div>
 
-      <DefaultButtons text="REGISTER ME" className="mt-8" />
+      <DefaultButtons text="REGISTER ME" className="mt-8 bg-[#e45914]" />
     </div>
   );
 };

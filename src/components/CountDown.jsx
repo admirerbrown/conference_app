@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Counter = () => {
   return (
-    <div className="bg-orange-600 sm:h-20 lg:h-24 xl:24 flex justify-between md:px-24">
+    <div className="bg-[#e45914] sm:h-20 lg:h-24 xl:24 flex justify-between md:px-24">
       <ul className="flex justify-items-center flex-col px-4 py-2">
         <li className="flex text-white justify-items-center p-1">
           <ImLocation className="pt-1"></ImLocation> ACCRA, GHANA
