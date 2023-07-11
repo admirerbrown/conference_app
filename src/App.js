@@ -3,6 +3,7 @@ import NavMenu from './components/Nav';
 import Home from './components/HomePage';
 import Counter from './components/CountDown';
 import About from './components/AboutUs';
+import Speakers from './components/Speakers'
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <Home></Home>
       <Counter></Counter>
       <About></About>
+      <Speakers></Speakers>
+
 
     </div>
   );
