@@ -11,7 +11,7 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Speakers = () => {
   const speakers = [
     {
-      src: "https://picsum.photos/id/1018/1000/600/",
+      src: "https://images.unsplash.com/photo-1592598015799-35c84b09394c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODF8fGJsYWNrJTIwd29tZW58ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
       name: "Mercy Lavie",
       title: "Product Manager",
       summary: `Para obtener una descripción general rápida de estas frases básicas en español, 
@@ -21,13 +21,13 @@ const Speakers = () => {
       sonidos complicados.Y uno o dos extras de información adicional sobre el idioma y la 
       cultura española.`,
       roles: [
-       "pronunciación de estas frases en español",
+        "pronunciación de estas frases en español",
         "general rápida de estas frases básicas",
         "Y uno o dos extras de información adicional",
       ],
     },
     {
-      src: "https://picsum.photos/id/1015/1000/600/",
+      src: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVjaGllcyUyMGd1eXN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
       name: "Samuel Donovan",
       title: "Product Manager",
       summary: `Para obtener una descripción general rápida de estas frases básicas en español, 
@@ -43,8 +43,8 @@ const Speakers = () => {
       ],
     },
     {
-      src: "https://picsum.photos/id/1019/1000/600/",
-      name: "Mercy Lavie",
+      src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRlY2hpZXMlMjBndXlzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "Matt Lavie",
       title: "Snr. Recruiting Officer",
       summary: `Para obtener una descripción general rápida de estas frases básicas en español, 
       consulte la hoja de trucos a continuación. Considere esto como su propio libro de frases 
@@ -59,7 +59,7 @@ const Speakers = () => {
       ],
     },
     {
-      src: "https://picsum.photos/id/1018/1000/600/",
+      src: "https://images.unsplash.com/photo-1485875437342-9b39470b3d95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29tZW58ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
       name: "ELANA DORAN",
       title: "Co.Founder",
       summary: `Para obtener una descripción general rápida de estas frases básicas en español, 
@@ -75,7 +75,7 @@ const Speakers = () => {
       ],
     },
     {
-      src: "https://picsum.photos/id/1015/1000/600/",
+      src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d29tZW58ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
       name: "JESSICA PALT",
       title: "Founder",
       summary: `Para obtener una descripción general rápida de estas frases básicas en español, 
@@ -91,8 +91,8 @@ const Speakers = () => {
       ],
     },
     {
-      src: "https://picsum.photos/id/1019/1000/600/",
-      name: "Mavis Beacon",
+      src: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBtYWxlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      name: "Daniel Beacon",
       title: "Designer",
       summary: `Para obtener una descripción general rápida de estas frases básicas en español, 
       consulte la hoja de trucos a continuación. Considere esto como su propio libro de frases 
@@ -138,38 +138,38 @@ const Carousel = ({ speakers }) => {
   return (
     <div className="lg:flex bg-[#242732]">
       <div className="carousel lg:w-1/2 relative">
-        <div className="carousel">
-          {speakers.map((speaker, index) => (
-            <div
-              key={index}
-              className={`slide ${
-                index === activeSlide ? "block" : "hidden"
-              } w-full h-full`}
-            >
-              <img
-                src={speaker.src}
-                alt={`${index + 1}`}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          ))}
-        </div>
+        {speakers.map((speaker, index) => (
+          <div
+            key={index}
+            className={`slide ${
+              index === activeSlide ? "block" : "hidden"
+            } w-full h-full`}
+          >
+            <img
+              src={speaker.src}
+              alt={`${index + 1}`}
+              className="object-cover w-full h-full"
+            />
+          </div>
+        ))}
 
-        <div className="thumbnails absolute bottom-0 left-0 flex justify-center w-full p-3 bg-neutral-500 opacity-70">
-          {speakers.map((speaker, index) => (
-            <div
-              key={index}
-              className="cursor-pointer  border-4 mx-1 border-transparent relative hover:border-[#e45914]"
-              onClick={() => changeSlide(index)}
-            >
-              <img
-                src={speaker.src}
-                alt={`${index + 1}`}
-                className="w-36 h-16 lg:h-24 object-cover"
-              />
-            </div>
-          ))}
-        </div>
+        {/* <div className="w-full">
+          <div className="thumbnails absolute bottom-0 left-0 flex  w-full pl-1 py-3 bg-neutral-500 opacity-70 ">
+            {speakers.map((speaker, index) => (
+              <div
+                key={index}
+                className="cursor-pointer  border-4  border-transparent relative hover:border-[#e45914] "
+                onClick={() => changeSlide(index)}
+              >
+                <img
+                  src={speaker.src}
+                  alt={`${index + 1}`}
+                  className="w-36 h-16 lg:h-24 object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div> */}
       </div>
       <div className="description lg:w-1/2 pt10 p-10">
         <div className="flex 2xl:items-center">
